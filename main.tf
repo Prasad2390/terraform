@@ -24,3 +24,18 @@ variable "volume" {
   type    = number
   default = 20
 }
+
+
+
+terraform init
+terraform plan
+terraform apply --auto-approve
+terraform destroy --auto-aaprove
+terraform validate
+terraform fmt
+terraform state list
+terraform destroy --auto-approve -target="...."
+terraform taint "...."    -----to recreate the resorce
+terraform apply --auto-approve
+terraform apply --auto-approve -replace="...." ----to recreate the resource
+terraform refresh
