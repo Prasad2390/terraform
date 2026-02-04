@@ -63,6 +63,7 @@ terraform destroy --auto-aaprove
 terraform validate
 terraform fmt
 terraform state list
+terraform state show "...."
 terraform destroy --auto-approve -target="...."
 terraform taint "...."    -----to recreate the resorce
 terraform apply --auto-approve
