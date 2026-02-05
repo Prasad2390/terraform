@@ -56,6 +56,18 @@ variable "volume" {
   default = 20
 }
 
+
+
+lifecycle {
+create_before_destroy = true
+prevent_destroy = true
+ignore_changes = [tags]
+}
+}
+
+
+
+----------
 terraform init
 terraform plan
 terraform apply --auto-approve
